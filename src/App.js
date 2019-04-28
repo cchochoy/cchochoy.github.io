@@ -1,26 +1,43 @@
-import React from 'react';
-import logo from './logo.svg';
+import React, { Component } from 'react';
+import SidePanel from './SidePanel';
+import Home from './Home';
+import Projects from './Projects';
+import About from './About';
+
 import './App.css';
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+class App extends Component {
+  constructor(props) {
+    super(props)
+
+    this.menuHandler = this.menuHandler.bind(this)
+  }
+
+  menus = [
+    { name: "Home"}, { name: "Projects"}, { name: "About"}
+  ]
+
+  state = {
+    content: "Home",
+  }
+
+  menuHandler(newcontent) {
+    console.log('content', newcontent, newcontent === "Projects")
+    this.setState({
+      content: newcontent,
+    })
+  }
+
+  render() {
+    return (
+      <div className="website">
+        <SidePanel menus={this.menus} onClick={this.menuHandler}/>
+        {this.state.content === "Home" && <Home />}
+        {this.state.content === "Projects" && <Projects />}
+        {this.state.content === "About" && <About />}
+      </div>
+    )
+  }
 }
 
 export default App;

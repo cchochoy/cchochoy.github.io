@@ -1,0 +1,86 @@
+.sidePanel {
+    background-color: #212934;
+    color: white;
+    height: 100%;
+    width: 200px;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    font-style: bold;
+    box-shadow: 0px 0px 10px black;
+}
+
+.sidePanel img {
+    height: 130px;
+    width: 130px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 20px;
+}
+
+.sidePanel p.name {
+    text-transform: uppercase;
+    font-size: 30px;
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: 5px;
+}
+
+.sidePanel p.surname {
+    text-transform: uppercase;
+    font-size: 30px;
+    text-align: center;
+    margin-top: 5px;
+    margin-bottom: 20px;
+}
+
+.sidePanel p.job {
+    text-align: center;
+    font-style: italic;
+    color: #bfbfbf;
+    margin-bottom: 20px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+.sidePanel p.fullLine {
+    border-bottom: 1px solid white;
+}
+
+.sidePanel ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    width: 200px;;
+    position: fixed;
+    overflow: auto;
+}
+
+.sidePanel li {
+    display: block;
+    color: white;
+    padding-bottom: 12px;
+    padding-top: 12px;
+    font-size: 23px;
+    text-align: center;
+    cursor: pointer;
+}
+
+.sidePanel li:hover {
+    background-color: #3d3e48;
+}
+
+  /*
+  
+  li a.active {
+    background-color: #3d3e48;
+    color: white;
+  }
+  
+  li a:hover:not(.active) {
+    background-color: #3d3e48;
+    color: white;
+  }
+  
+  */

@@ -1,0 +1,30 @@
+.projects {
+    margin-left: 250px;
+}
+
+.projects h1 {
+    margin-bottom: 5px;
+    padding-bottom: 0px;
+}
+
+.header {
+    padding-bottom: 5px;
+    border-bottom: 2px solid #212934;
+    margin: 0px;
+    padding: 0px;
+}
+
+.space {
+    height: 50px;
+}
+
+.column {
+    float: left;
+    width: 33.33%;
+}
+
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
