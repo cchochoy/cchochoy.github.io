@@ -1,18 +1,106 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto');
+
 .projectBox {
-    margin-top: 30px;
-    margin-bottom: 30px;
-    box-shadow: 0px 0px 5px black;
-    border: 1px solid #ffffff;
-    width: 80%;
-    height: 150px;
-    border-radius: 5px;
-    background-color: #fdfdfd;
+	border-radius: 10px;
+	margin: 10px 1.6%;
+	overflow: hidden;
+	position: relative;
+    width: 30%;
+    font-family: 'Roboto', sans-serif;
 }
 
-.title {
-    text-align: center;
-    font-size: 20px;
-    cursor: pointer;
+.projectOverview {
+    position: relative;
+	text-align: center;
+	width: 100%;
+	height: 100%;
+}
+
+.overview {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    object-fit: cover;
+	transition: transform 200ms ease-in;
+	height: 50%;  	
+	width: 60%;
+    background-color: rgba(255, 255, 255, 0.85);
+    border-radius: 10px;
+    margin: 0px;
+    padding: 10px;
+	font-size: 10px;
+	overflow: hidden;
+}
+
+.projectBox img {
+	object-fit: cover;
+	transition: transform 200ms ease-in;
+	height: 100%;  	
+    width: 100%;
+}
+
+.projectContent {
+	background-color: rgba(0, 0, 0, 0.5);
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+	color: #fff;
+	position: absolute;
+	top: 0;
+	left: 0;
+	opacity: 0;
+	transition: opacity 200ms ease-in-out;
+	width: 100%;
+	height: 100%;
+}
+
+.projectBox:hover .projectContent {
+	opacity: 1;
+}
+
+.projectBox:hover .overview {
+	opacity: 0;
+}
+
+.projectBox:hover img {
+	transform: scale(1.1);
+}
+
+.projectContent p {
+	color: #fff;
+	font-size: 15px;
+	padding: 10px;
+	text-align: center;
+}
+
+.projectBox p {
+	line-height: 24px;
+	margin: 0;
+}
+
+.projectContent a {
+	background-color: #fff;
+	border-radius: 3px;
+	color: #000;
+	margin-top: 20px;
+	padding: 7px 15px;
+	text-decoration: none;
+}
+
+@media (max-width: 960px) {
+	.projectBox {
+		width: 48%;
+		margin: 15px 1%;
+	}
+}
+
+@media (max-width: 768px) {
+	.projectBox {
+		width: 100%;
+		margin: 15px 0;
+	}
 }
 
 .fullLine {
@@ -21,10 +109,4 @@
     margin: 5px;
     margin-right: 20px;
     margin-left: 20px;
-}
-
-.description {
-    margin-left: 5px;
-    margin-top: 20px;
-    font-size: 10px;
 }
