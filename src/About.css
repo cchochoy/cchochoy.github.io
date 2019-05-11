@@ -1,4 +1,29 @@
-.about {
-    margin-left: 150px;
-    text-align: center;
+.aboutPage {
+    margin-left: 250px;
+}
+
+.title {
+	margin-left: 50px;
+}
+
+.timeline {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    margin: 40px 0;
+}
+
+.timeline::after {
+    background-color: #e17b77;
+    content: '';
+    position: absolute;
+    left: calc(50% - 2px);
+    width: 4px;
+    height: 100%;
+}
+
+.fullLine {
+    border-bottom: 1px solid black;
+    box-shadow: 1px 1px 1px black;
+    margin-left: 20px;
 }

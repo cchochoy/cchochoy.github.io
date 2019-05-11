@@ -24,7 +24,7 @@ class App extends Component {
 
   projectList = [
     { 
-      key: 1,
+      key: 5,
       img: "https://images.pexels.com/photos/270404/pexels-photo-270404.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260", 
       title: "cchochoy.github.io",
       shortDesc: "React website",
@@ -32,11 +32,11 @@ class App extends Component {
       href: ""
     },
     { 
-      key: 2,
+      key: 4,
       img: "https://images.pexels.com/photos/158826/structure-light-led-movement-158826.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500", 
       title: "e1000 fake driver",
       shortDesc: "Virtualbox Guest-to-Host escape",
-      longDesc: "This is a code of a malicious e1000 driver exploiting Virtualbox CVE-2018-3295. This code was developped for a school project.",
+      longDesc: "This is the code of a malicious e1000 driver exploiting Virtualbox CVE-2018-3295. This code was developped for a school project.",
       href: ""
     },
     { 
@@ -48,25 +48,24 @@ class App extends Component {
       href: ""
     },
     { 
-      key: 4,
+      key: 2,
       img: "https://tecnico.ulisboa.pt/files/2017/06/priberam-machine-learning-lunch-seminar-joao-xavier-1140x641.jpg", 
       title: "classy-filer",
       shortDesc: "Image classification",
-      longDesc: "This is a python image classifier project using tensorflow. It contains a python class that allow you to train and test your own image classifier.",
+      longDesc: "This is a python image classifier project using tensorflow. It contains a python class allowing you to train and test your own image classifier.",
       href: ""
     },
     { 
-      key: 5,
+      key: 1,
       img: "https://www.telegraph.co.uk/content/dam/gardening/2018/06/07/TELEMMGLPICT000165573825_trans_NvBQzQNjv4BqaxhR1vC4M3eHXTZuhDlJp-iBvoxkJnxoIp2wzaVi5fo.jpeg?imwidth=450", 
       title: "pyMaze",
       shortDesc: "Simple python game",
-      longDesc: "You are throwed in a randomly generated maze and need to reach a specific area. Will you beat the highscore ?",
+      longDesc: "You are thrown in a randomly generated maze and need to reach a specific area. Will you beat the highscore ?",
       href: ""
   }
   ]
 
   menuHandler(newcontent) {
-    console.log('content', newcontent, newcontent === "Projects")
     this.setState({
       content: newcontent,
     })
