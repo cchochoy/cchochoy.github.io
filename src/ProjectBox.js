@@ -13,7 +13,7 @@ const ProjectBox = ({ img, title, shortDesc, longDesc, href }) => (
         </div>
         <div className="projectContent">
             <p>{longDesc}</p>
-            <a href={href} target="_blank">See More</a>
+            <a href={href} target="_blank" rel="noopener noreferrer" >See More</a>
         </div>
     </div>
 )
